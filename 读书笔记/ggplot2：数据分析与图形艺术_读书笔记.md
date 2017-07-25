@@ -4,7 +4,6 @@
 
 ### 生成一个组距为2，铁青色的直方图 
 
-
 ``` bash
 library("ggplot2")
 p<-ggplot(diamonds,aes(x=carat))
@@ -15,6 +14,13 @@ p<-p+layer(
   position="identity"
 )
 p
+
+```
+
+### ggplot2的数据结构 
+
+``` bash
+
 
 ```
 
