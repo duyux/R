@@ -74,7 +74,7 @@ getID = function(mapdata, provname){
   return(as.numeric(ids));
 }
 midchina = c("河南省", "山西省", "湖北省", "安徽省", "湖南省", "江西省");
-#plot(x, col = getColor(x, midchina, rep("green", 6),"white"), border = "white", xlab = "", ylab = "")
+plot(x, col = getColor(x, midchina, rep("green", 6),"white"), border = "white", xlab = "", ylab = "")
 
 
 
