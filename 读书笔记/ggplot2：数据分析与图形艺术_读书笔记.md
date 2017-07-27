@@ -76,10 +76,18 @@ getID = function(mapdata, provname){
 midchina = c("河南省", "山西省", "湖北省", "安徽省", "湖南省", "江西省");
 plot(x, col = getColor(x, midchina, rep("green", 6),"white"), border = "white", xlab = "", ylab = "")
 
+```
 
+### 渐变色
 
-
+``` bash
+gradient_rb<-scale_color_gradient(low="red",high="blue")
+qplot(cty,hwy,data=mpg,colour=displ)+gradient_rb
 
 ```
+
+
+
+
 
 
