@@ -1,0 +1,9 @@
+library(maps)
+ee<-array(rnorm(89*180),dim=c(89,180))
+lati <- seq(-90,90,length=89) #Latitudes goes from -90 to 90 as far as I know :)
+long <- seq(-180,180,length=180)
+draw.map <- function() 
+{
+  maps::map(database="world", fill=TRUE, col="light blue", add=TRUE)
+}
+filled.contour(long,lati,t(ee), color.palette=terrain.colors, plot.axes=draw.map())

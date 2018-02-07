@@ -1,0 +1,5 @@
+data<-read.csv("data.csv", header=TRUE)
+attach(data)
+contour(x, y, z, levels = seq(0.1, 0.9, by=0.1), xlim=c(75,134), ylim=c(19,53), col="grey50", lwd=1, labcex=1.5,
+        xlab=expression(paste("Longitude  (",degree,"E)")), ylab=expression(paste("Latitude  (",degree,"N)")), cex.axis=1.5, 
+        cex.lab=1.5, method="edge")
