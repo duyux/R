@@ -1,0 +1,1 @@
+mysample < leadership[sample(1:nrow(leadership),3,replace=False)]
